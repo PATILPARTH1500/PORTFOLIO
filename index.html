@@ -1,29 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Parth_Portfolio</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body>
+    <!-- HERO SECTION -->
     <div id="header">
-        <div class="container">
-            <nav>
-                <img src="/assets/images/logo.png" alt="Logo" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Work-Experience</a></li>
-                    <li><a href="#">Contact Me</a></li>
-                </ul>
-            </nav>
-            <div class="header-text">
-                <p>Software Developer|Web Developer</p>
-                <h1>Hi, I'm <span>Parth </span>Patil<br> from India</h1>
-            </div>
+      <div class="container">
+        <nav>
+          <img src="/assets/images/logo.png" alt="Logo" class="logo" />
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Work-Experience</a></li>
+            <li><a href="#">Contact Me</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <p>Software Developer|Web Developer</p>
+          <h1>
+            Hi, I'm <span>Parth </span>Patil<br />
+            from India
+          </h1>
         </div>
+      </div>
     </div>
-</body>
+
+    <!-- ABOUT SECTION -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="/assets/images/user.png" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p class="about-text">
+              I am a passionate and detail-oriented software developer with
+              expertise in web development and programming. My skills span
+              across frontend and backend technologies, including HTML, CSS,
+              JavaScript, Node.js, and Python. I have a strong ability to create
+              efficient, scalable, and user-friendly applications tailored to
+              meet diverse needs.<br>
+               I thrive on solving complex problems and
+              transforming ideas into functional, visually appealing digital
+              solutions. With a proactive approach and a continuous desire to
+              learn, I aim to contribute to innovative projects that make a
+              meaningful impact.
+            </p>
+            <div class="tab-title">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('education')">Educations</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Web Developer</span><br>Coding Web interface</li>
+                    <li><span>Software Tester</span><br>Testing Software Features and Debugging</li>
+                    <li><span>Python Expert</span><br>Ai/ML Pyhton</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2008-2022</span><br>10th SSC Passed - 80.80% St.Lawrence High School</li>
+                    <li><span>2022-2024</span><br>12th HSC Passed - 71.80% St.Mary's Junior College</li>
+                    <!-- <li><span>Python Expert</span><br>Ai/ML Pyhton</li> -->
+                </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>Apr 2024 - Jan 2025</span><br>Software Eng at SYS Shipping & Logistics Pvt Ltd(Internship)</li>
+                    <li><span>Jan 2025 - Current</span><br>Web Developer at Art Home </li>
+                    <!-- <li><span>Python Expert</span><br>Ai/ML Pyhton</li> -->
+                </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-contents');
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove('active-link');
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove('active-tab');
+            }
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabname).classList.add('active-tab');
+        }
+    </script>
+  </body>
 </html>
