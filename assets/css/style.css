@@ -470,4 +470,12 @@ nav .fa-solid {
     .work{
         margin-right: -144px;
     }
+
+    .row{
+        margin-right:-144px;            
+    }
+
+    .contact-left{
+        flex-basis:100%;
+    }
 }
