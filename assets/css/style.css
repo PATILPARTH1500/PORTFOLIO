@@ -290,3 +290,99 @@ nav ul li a:hover::after{
 .work:hover .layers{
     height:100%;
 }
+
+.contact-left{
+    flex-basis: 35%;
+}
+
+.contact-right{
+    flex-basis: 60;
+}
+
+.contact-left p{
+    margin-top:30px;
+}
+
+.contact-left p i{
+color:#ffffff;
+margin-right:15px;
+font-size:20px;
+}
+
+.social-icons{
+    margin-top:30px;
+
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size:30px;
+    margin-right:15px;
+    color:#ababab;
+    display:inline-block;
+    transition:transform 0.5s;
+}
+
+.social-icons a:hover{
+    transform: translateY(-10px);
+    color:#ffffff
+}
+
+.btn{
+    display:block;
+    margin:50px auto;
+    width:fit-content;
+    border:1px solid #cbc0c0;
+    padding:14px 50px;
+    border-radius:6px;
+    text-decoration:none;
+    color:#ffffff;
+    transition:background 0.5s;
+}
+
+.btn:hover{
+    background-color:#888585;
+}
+
+.btn.btn2{
+    display:inline-block;
+    background-color: #000000;
+}
+
+.contact-right form{
+    width:100%
+}
+
+form input, form textarea{
+    width:100%;
+    border:0;
+    outline:none;
+    background:#262626;
+    padding:15px;
+    margin:15px 0;
+    color:#ffffff;
+    border-radius:6px;
+    font-size:18px;
+}
+
+form .btn2{
+    padding:14px 60px;
+    font-size:18px;
+    margin-top:20px;
+    cursor:pointer;
+
+}
+
+form .btn2:hover{
+    background-color:#888585;
+}
+
+.copyright{
+    width:100%;
+    text-align:center;
+    padding:25px 0;
+    background: #464646;
+    color:#ffffff;
+    font-weight:300;
+    margin-top:20px;
+}
