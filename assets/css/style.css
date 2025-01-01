@@ -4,7 +4,9 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body {
     background-color: #080808;
     color: #fff
@@ -338,6 +340,8 @@ nav ul li a:hover::after {
     text-decoration: none;
     color: #ffffff;
     transition: background 0.5s;
+    position:relative;
+    right:44px;
 }
 
 .btn:hover {
@@ -350,7 +354,7 @@ nav ul li a:hover::after {
 }
 
 .contact-right form {
-    width: 100%
+    width: 144%
 }
 
 form input,
@@ -471,11 +475,10 @@ nav .fa-solid {
         margin-right: -144px;
     }
 
-    .row{
-        margin-right:-144px;            
-    }
-
     .contact-left{
         flex-basis:100%;
+    }
+    .contact-right form {
+        width: 144%
     }
 }
