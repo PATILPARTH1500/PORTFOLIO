@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Parth_Portfolio</title>
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
     <!-- Google Icons -->
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
       rel="stylesheet"
     />
+
   </head>
   <body>
     <!-- HERO SECTION -->
@@ -233,10 +235,12 @@
       <a href="/assets/images/my-cv.pdf" download class="btn">Download CV</a>
      </div>
      <div class="contact-right">
-      <form action="">
-        <input type="text" name="Name" placeholder="Your Name" required>
-        <input type="email" name="Email" placeholder="Your Email" required>
-        <textarea name="Mesaage" rows="6" placeholder="Your Message"></textarea>
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <!-- Replace with your Access Key -->
+    <input type="hidden" name="access_key" value="9cada07d-ddb8-469c-b24e-5c0ce0f5e6ee">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="mesaage" rows="6" placeholder="Your Message"></textarea>
         <button type="submit" class="btn btn2">Send</button>
       </form>
      </div>
