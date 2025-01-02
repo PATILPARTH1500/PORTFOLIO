@@ -341,7 +341,7 @@ nav ul li a:hover::after {
     color: #ffffff;
     transition: background 0.5s;
     position:relative;
-    right:44px;
+    right:60px;
 }
 
 .btn:hover {
@@ -354,7 +354,7 @@ nav ul li a:hover::after {
 }
 
 .contact-right form {
-    width: 144%
+    width: 100%
 }
 
 form input,
@@ -375,7 +375,7 @@ form .btn2 {
     font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
-
+    right:2px;
 }
 
 form .btn2:hover {
@@ -480,5 +480,13 @@ nav .fa-solid {
     }
     .contact-right form {
         width: 144%
+    }
+    
+    form .btn2{
+        right:2px;
+    }
+
+    .copyright{
+        width: 138%;
     }
 }
